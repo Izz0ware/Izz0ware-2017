@@ -1,0 +1,68 @@
+/*
+Theme Name: 2017 - Izz0ware
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Template: twentyseventeen
+Author: Izz0ware
+Description: Izz0ware Childtheme. Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Tags: one-column,two-columns,right-sidebar,flexible-header,accessibility-ready,custom-colors,custom-header,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,post-formats,rtl-language-support,sticky-post,theme-options,threaded-comments,translation-ready
+Version: 1.1.1486715548
+Updated: 2017-02-10 09:32:28
+
+*/
+
+/* Theme style changes */
+.widget {
+	padding-bottom: 0px !important;
+}
+@media screen and (min-width: 48em){
+  .site-branding-text .site-title img {
+   margin-left: -30px; 
+  }
+	.page.page-one-column .entry-header,
+  	.twentyseventeen-front-page.page-one-column .entry-header,
+  	.archive.page-one-column:not(.has-sidebar) .page-header {
+  	margin-bottom: 2em !important;
+	}
+  	.site-footer {
+    	margin-top: 0px !important;
+  }
+  body:not(.has-sidebar):not(.page-one-column) .page-header,
+  body.has-sidebar.error404 #primary .page-header,
+  body.page-two-column:not(.archive) #primary .entry-header,
+  body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+    width: 30% !important;
+    text-align: center;
+  }
+  .blog:not(.has-sidebar) #primary article,
+  .archive:not(.page-one-column):not(.has-sidebar) #primary article,
+  .search:not(.has-sidebar) #primary article,
+  .error404:not(.has-sidebar) #primary .page-content,
+  .error404.has-sidebar #primary .page-content,
+  body.page-two-column:not(.archive) #primary .entry-content,
+  body.page-two-column #comments {
+    width: 70% !important;
+  }
+  .wrap {
+    max-width: 1200px !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+	}
+
+  body.page-two-column:not(.archive) #primary .panel-content.full-width .entry-content {
+    width: 100% !important;
+    text-align: center;
+  }
+  body.page-two-column:not(.archive) #primary .panel-content span.edit-link {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+  }
+  .panel-content .wrap {
+      padding-top: 4.5em !important;
+  }
+}
+@media screen and (min-width: 30em) {
+	.panel-content .entry-header {
+    	margin-bottom: 1.5em;
+	}
+}
